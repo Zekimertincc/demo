@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSLMUN</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="headerbg">
+        <header>
+            <a href="" class="logo"><img src="design/mobilnavbrand.svg" alt=""></a>
+            <input type="checkbox" name="" id="menu-bar">
+            <label for="menu-bar">Menu</label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Registration</a>
+                        <ul>
+                            <li><a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLScsEsp3nFKgKJSMTkH3fR_IohAnU3sx0oWHDQxpZ3L-rtu2aA/viewform">Chair</a>
+                            </li>
+                            <li><a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLScp8_GJBAdhxxy93VedL5Rx00DNkXAN_oplbOXQYMKm2aXC2w/viewform">İndividual</a>
+                            </li>
+                            <li><a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeg0HJcfuXfvXXMQHIZ2vj8Qyq6XtR1qiyXaldQJRaKrmMXww/viewform">Delegation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="#">Details</a>
+                        <ul>
+                            <li><a href="wlet.html">Welcome letter</a></li>
+                            <li><a href="comite.html">Commitees</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="covid.html">Covid-19</a></li>
+                </ul>
+            </nav>
+
+
+
+        </header>
+        <h1 class="üst-yazı"">GALATASARAY </h1>
+        <h1 class=" üst-yazı">MODEL UNİTED NATİONS</h1>
+
+    </div>
+
+    <div class="main">
+        <h1 class="main">Welcome to the official website of GSLMUN2021!</h1>
+        <p class="main"">
+            Galatasaray  Model United Nations (GSLMUN) is a HMUN affiliated conference that provides a platform for high school students where participants can unite to discuss current and historic global issues and events. The sixth session of GSLMUN will take place from the 23rd to the 26th of December. Check out our Welcome Letter for more details about GSLMUN 2021.
+        </p>
+        <div class=" mainfoto">
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="photos/_MG_3586.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="photos/bunukoy.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="photos/IMG_4504.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="photos/IMG_5032.JPG" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+    <footer>
+        <img class=" footerlogo" src="design/asdVarlık 2logo.svg" alt="">
+        <p>Galatasaray Lisesi</p>
+        <p id="gslft">Model United Nations</p>
+        <p>Developed by Zeki Mert İnceoğlu</p>
+        <p>Designed by Eren Parmaksız</p>
+    </footer>
+
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+
+
+
+</body>
+
+</html>

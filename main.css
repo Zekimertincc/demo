@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family:Montserrat,open-sans;
+    text-transform:capitalize;
+    text-decoration:none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-size: cover;
+    background-color: #f9edf0;
+}
+/* HEADER SECTİON BAŞLANGIÇ */
+div.headerbg{
+    height: 500px;
+    width: auto;
+
+    
+    background-position: center;
+    background-image: url("design/anasayfa\ arkaplan.png");
+    background-size: cover;
+    background-size: 1920px 916px;
+    background-repeat:no-repeat;
+}
+
+header{/**/
+    position: fixed;
+    top:0;left: 0;right: 0;
+    background-color: #531620;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 1) ;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+
+
+
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fff;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size:20px;
+    padding: 20px;
+    color: #fff;
+    display:block;
+    background-color: #531620;
+}
+header .navbar ul li a:hover{
+    background-color: #333;
+    color:#fff ;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top:1 px solid rgba(0, 0, 0, .1) ;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+
+header label{
+    font-size: 20px;
+    color:#fff;
+    cursor: pointer;
+    display:none ;
+}
+.üst-yazı{
+    
+    color:white ;
+    position: relative;
+    font-size: 25px;
+    top:200px;
+    text-align: center;
+   
+
+ }
+
+/* HEADER SECTİON BİTİYO BURDA  */
+
+/*MAİN CONTENT SECTİON*/ 
+div.main{
+    width: auto;
+    height: 1400px;
+    background-color: #f9edf0;
+    border-top-left-radius:70px;
+    border-top-right-radius:70px ;
+    flex-grow: 1;
+    word-wrap: break-word;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+h1.main{
+    position: relative;
+    top:40px;
+    margin-bottom:50px ;
+}
+p.main{
+    width: 1000px;
+    margin:auto ;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top:40px;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.mainfoto{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    
+  }
+  
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+    cursor: pointer;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER SECTİON */
+
+footer{
+    width: auto;
+    height: 300px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+#gslft{
+    margin-bottom: 1rem;
+}
+img{
+    width: 135px;
+    height: 90px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px)  {
+    
+    
+header{
+    padding: 20px;
+}
+header label{
+    display:initial;
+}
+header .navbar{
+    position: absolute;
+    top:100% ;left: 0;right: 0;
+    background:#531620;
+    border-top:1 px solid rgba(0,0,0,.1);
+    display: none;
+}
+header .navbar ul li{
+    width: 100%;
+}
+header .navbar ul li ul{
+    position: relative;
+    width:100% ;
+}
+header .navbar ul li ul li{
+    background:#eee ;
+}
+#menu-bar:checked ~ .navbar{
+    display: initial;
+}
+
+
+
+.mainfoto{
+    width: auto;
+}
+
+.navigation-auto{width: auto;}
+.navigation-manual{width: auto;}
+/*
+.üst-yazı{
+    display: none;
+}
+*/
+p.main{
+    width: auto;
+}
+
+}
